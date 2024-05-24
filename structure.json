@@ -1,0 +1,17 @@
+{
+  "type": "directory",
+  "name": "Notes",
+  "contents": [
+    { "type": "file", "name": "tst.2.md" },
+    {
+      "type": "directory",
+      "name": "TopicsA",
+      "contents": [ { "type": "file", "name": "tst.md" } ]
+    },
+    {
+      "type": "directory",
+      "name": "TopicsB",
+      "contents": [ { "type": "file", "name": "tst.1.md" } ]
+    }
+  ]
+}

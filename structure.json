@@ -1,30 +1,30 @@
 {
   "type": "directory",
   "name": ".",
-  "path": "./Notes/",
+  "path": "Notes/Notes/",
   "contents": [
-    { "type": "file", "name": "tst.2.md", "path": "./Notes/tst.2.md" },
+    { "type": "file", "name": "tst.2.md", "path": "Notes/Notes/tst.2.md" },
     {
       "type": "directory",
       "name": "TopicsA",
-      "path": "./Notes/TopicsA",
+      "path": "Notes/Notes/TopicsA",
       "contents": [
         {
           "type": "file",
           "name": "tst.md",
-          "path": "./Notes/TopicsA/tst.md"
+          "path": "Notes/Notes/TopicsA/tst.md"
         }
       ]
     },
     {
       "type": "directory",
       "name": "TopicsB",
-      "path": "./Notes/TopicsB",
+      "path": "Notes/Notes/TopicsB",
       "contents": [
         {
           "type": "file",
           "name": "tst.1.md",
-          "path": "./Notes/TopicsB/tst.1.md"
+          "path": "Notes/Notes/TopicsB/tst.1.md"
         }
       ]
     }

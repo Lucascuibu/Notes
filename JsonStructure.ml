@@ -1,18 +1,26 @@
 open Yojson.Basic
+open Unix
 
 type file_tree =
-  | File of string * string (* name, absolute path *)
+  | File of string * string * string (* name, absolute path, modification time *)
   | Path of string
+  | Time of string  (* name, time *)
   | Directory of string * string * file_tree list (* name, absolute path, contents *)
 
+let format_modification_time time =
+  let tm = Unix.gmtime time in
+  Printf.sprintf "%04d-%02d-%02d" (1900 + tm.tm_year) (tm.tm_mon + 1) tm.tm_mday
+
 let rec file_tree_to_json = function 
-  | File (name, path) -> 
+  | File (name, path, mod_time) -> 
       `Assoc [
         ("type", `String "file"); 
         ("name", `String name); 
-        ("path", `String path)
+        ("path", `String path);
+        ("time", `String mod_time)
       ]
   | Path path -> `Assoc [("type", `String "path"); ("name", `String path)]
+  | Time time -> `Assoc [("type", `String "time"); ("name", `String time)]
   | Directory (name, path, contents) ->
       `Assoc [
         ("type", `String "directory");
@@ -38,7 +46,9 @@ and read_item base_path root_path path =
   else if Sys.is_directory full_path then
     Some (read_directory base_path root_path path)
   else
-    Some (File (name, Filename.concat root_path path))
+    let stats = Unix.stat full_path in
+    let mod_time = format_modification_time stats.st_mtime in
+    Some (File (name, Filename.concat root_path path, mod_time))
 
 let save_json_to_file json =
   let filename = "./structure.json" in 

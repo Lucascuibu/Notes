@@ -3,7 +3,12 @@
   "name": ".",
   "path": "Notes/Notes/",
   "contents": [
-    { "type": "file", "name": "tst.2.md", "path": "Notes/Notes/tst.2.md" },
+    {
+      "type": "file",
+      "name": "tst.2.md",
+      "path": "Notes/Notes/tst.2.md",
+      "time": "2024-05-24"
+    },
     {
       "type": "directory",
       "name": "TopicsA",
@@ -12,7 +17,8 @@
         {
           "type": "file",
           "name": "tst.md",
-          "path": "Notes/Notes/TopicsA/tst.md"
+          "path": "Notes/Notes/TopicsA/tst.md",
+          "time": "2024-05-24"
         }
       ]
     },
@@ -24,7 +30,8 @@
         {
           "type": "file",
           "name": "tst.1.md",
-          "path": "Notes/Notes/TopicsB/tst.1.md"
+          "path": "Notes/Notes/TopicsB/tst.1.md",
+          "time": "2024-05-24"
         }
       ]
     }

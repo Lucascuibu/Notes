@@ -10,7 +10,7 @@ param=$1
 
 # 根据参数值执行不同的操作
 if [ "$param" = "-i" ]; then
-    ocamlfind ocamlopt -linkpkg -package yojson JsonStructure.ml -o json
+    ocamlfind ocamlopt -linkpkg -package unix -package yojson JsonStructure.ml -o json
     rm JsonStructure.cmi JsonStructure.o JsonStructure.cmx
     ./json
 elif [ "$param" = "-u" ]; then

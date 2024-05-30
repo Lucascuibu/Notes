@@ -1,0 +1,5 @@
+(executable
+ (public_name JsonStructure)
+ (name main)
+ (flags :standard -w -37)
+ (libraries JsonStructure yojson Unix))

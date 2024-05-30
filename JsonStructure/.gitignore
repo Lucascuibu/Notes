@@ -1,0 +1,52 @@
+# 忽略 Dune 的构建目录
+_build/
+
+# 忽略安装文件
+*.install
+
+# 忽略编辑器临时文件
+*.swp
+*~
+
+# 忽略操作系统生成的文件
+.DS_Store
+Thumbs.db
+
+# 忽略 IDE/编辑器特定的目录
+.vscode/
+.idea/
+*.sublime-workspace
+
+# 忽略 Merlin 系统文件
+.merlin
+
+# 忽略 OCaml 生成的文件
+*.cmi
+*.cmx
+*.cma
+*.cmxa
+*.cmo
+*.o
+*.a
+
+# 忽略 dune 自动生成的配置文件
+dune-project
+dune-workspace
+
+# 忽略 opam 文件
+*.opam.locked
+_opam/
+
+# 忽略自动生成的文档文件
+_doc/
+
+# 忽略 utop 目录
+.utop/
+
+# 忽略 jbuilder 目录（Dune 的旧名）
+.jbuild
+.jbuilder-ignore
+
+# 忽略自定义日志和结果文件
+*.log
+*.csv

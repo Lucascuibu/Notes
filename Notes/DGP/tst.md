@@ -2,11 +2,12 @@
 
 ##### Paper:
 
-Mathematics of the Faraday Cage 
+Mathematics of the Faraday Cage
 
 ##### Author :
 
 S. Jonathan Chapman†
+
 ##### Summary:
 
 Faraday Cage is an enclosure used to block some electromagnetic field.^1^ The conductive material in the specific pattern help create a reverse electromagnetic field against outside thus protect the interior area. Involving lapalace function we are familiar with, the text construct an analysis of mathematical model of Faraday Cage.

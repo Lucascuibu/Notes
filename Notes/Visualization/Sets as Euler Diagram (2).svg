@@ -1,0 +1,24 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 700" width="100%" height="100%"><circle fill="#8a816d" fill-opacity="0.5" cx="374.7790409673647" cy="244.36507345308138" stroke="none" r="150.14163506365867"><title>`A`.icon</title></circle><circle fill="#44c323" fill-opacity="0.5" cx="303.35995471056833" cy="224.03949103498556" stroke="none" r="149.7160366937858"><title>`B`.icon</title></circle><penrose><version>0.1</version><variation>AkabeniLapwing84634</variation><sub>Set A, B
+
+Intersecting(A, B)
+
+
+AutoLabel All</sub><sty>canvas {
+  width = 800
+  height = 700
+}
+
+forall Set x {
+    x.icon = Circle {
+        strokeWidth : 0.0
+    }
+    ensure x.icon.r &gt; 25
+    ensure x.icon.r &lt; 150
+}
+
+forall Set x; Set y
+where Intersecting(x, y) {
+    ensure overlapping(x.icon, y.icon, -15)
+}</sty><dsl>type Set
+
+predicate Intersecting(Set A, Set B)</dsl></penrose></svg>

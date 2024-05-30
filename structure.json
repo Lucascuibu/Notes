@@ -1,37 +1,61 @@
 {
   "type": "directory",
   "name": ".",
-  "path": "Notes/Notes/",
+  "path": "Notes/",
   "contents": [
     {
-      "type": "file",
-      "name": "tst.2.md",
-      "path": "Notes/Notes/tst.2.md",
-      "time": "2024-05-24"
-    },
-    {
       "type": "directory",
-      "name": "TopicsA",
-      "path": "Notes/Notes/TopicsA",
+      "name": "Visualization",
+      "path": "Notes/Visualization",
       "contents": [
         {
           "type": "file",
-          "name": "tst.md",
-          "path": "Notes/Notes/TopicsA/tst.md",
-          "time": "2024-05-24"
+          "name": "Sets as Euler Diagram (1).svg",
+          "path": "Notes/Visualization/Sets as Euler Diagram (1).svg",
+          "time": "2024-05-30",
+          "file_type": "SVG"
+        },
+        {
+          "type": "file",
+          "name": "Sets as Euler Diagram (2).svg",
+          "path": "Notes/Visualization/Sets as Euler Diagram (2).svg",
+          "time": "2024-05-30",
+          "file_type": "SVG"
+        },
+        {
+          "type": "file",
+          "name": "How to elegantly create diagram - Penrose.md",
+          "path": "Notes/Visualization/How to elegantly create diagram - Penrose.md",
+          "time": "2024-05-30",
+          "file_type": "Markdown"
         }
       ]
     },
     {
       "type": "directory",
-      "name": "TopicsB",
-      "path": "Notes/Notes/TopicsB",
+      "name": "Frontend",
+      "path": "Notes/Frontend",
       "contents": [
         {
           "type": "file",
-          "name": "tst.1.md",
-          "path": "Notes/Notes/TopicsB/tst.1.md",
-          "time": "2024-05-24"
+          "name": "How to build this website.md",
+          "path": "Notes/Frontend/How to build this website.md",
+          "time": "2024-05-24",
+          "file_type": "Markdown"
+        }
+      ]
+    },
+    {
+      "type": "directory",
+      "name": "DGP",
+      "path": "Notes/DGP",
+      "contents": [
+        {
+          "type": "file",
+          "name": "tst.md",
+          "path": "Notes/DGP/tst.md",
+          "time": "2024-05-30",
+          "file_type": "Markdown"
         }
       ]
     }

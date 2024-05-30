@@ -33,7 +33,7 @@ let file_type_of_suffix filename =
   | ".txt" -> Desired TXT
   | _ -> Undesired Unknown
 
-  
+
 type file_tree =
   | File of string * string * string * file_type 
   | Directory of string * string * file_tree list 
@@ -46,23 +46,23 @@ let format_modification_time time =
 let rec file_tree_to_json = function
   | File (name, path, mod_time, ft) ->
     begin match ft with
-    | Undesired _ -> `Null 
-    | Desired dt ->
-      `Assoc [
-        ("type", `String "file");
-        ("name", `String name);
-        ("path", `String path);
-        ("time", `String mod_time);
-        ("file_type", `String (match dt with
-             | MD -> "Markdown"
-             | PDF -> "PDF"
-             | SVG -> "SVG"
-             | JPG -> "JPG"
-             | PNG -> "PNG"
-             | GIF -> "GIF"
-             | TXT -> "Text"
-             | Other -> "Other"))
-      ]
+      | Undesired _ -> `Null 
+      | Desired dt ->
+        `Assoc [
+          ("type", `String "file");
+          ("name", `String name);
+          ("path", `String path);
+          ("time", `String mod_time);
+          ("file_type", `String (match dt with
+               | MD -> "Markdown"
+               | PDF -> "PDF"
+               | SVG -> "SVG"
+               | JPG -> "JPG"
+               | PNG -> "PNG"
+               | GIF -> "GIF"
+               | TXT -> "Text"
+               | Other -> "Other"))
+        ]
     end
   | Directory (name, path, contents) ->
     `Assoc [

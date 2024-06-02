@@ -118,8 +118,7 @@ Each of the following blocks are the implementation to the rule we wrote in .dom
 
 Put all the codes together we would receive such picture. Your output could be different from mine since randomness.
 
-![Sets as Euler Diagram (1)](./Sets as Euler Diagram (1).svg)
-`<img src="./Sets as Euler Diagram (1).svg" alt="Sets as Euler Diagram (1)" />`
+
 
 The Set relation is preserved, each set has its notation. If you don’t like the color or arrangement, you can add more constraints or simply click the resample button.  This is great! By default Penrose would export Pensore svg, which is just a simple svg followed by all the code you wrote above. You can consider this svg as a project so that you can upload it to the website and continue your work somewhere else. You can use a text editor to open the Pensore svg.
 
@@ -160,6 +159,6 @@ where Intersecting(x, y) {
 
 After some resample you can choose one you like.
 
-![Sets as Euler Diagram (2)](./Sets as Euler Diagram (2).svg)
+
 
 ## Advanced
